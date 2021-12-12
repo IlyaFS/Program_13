@@ -13,7 +13,7 @@ namespace Program_13
             Building building = new Building("улица Ленина дом 1", 100, 27, 15);
             MultiBuilding multiBuilding = new MultiBuilding("улица Ленина дом 1", 100, 27, 15, 5);
 
-            multiBuilding.PrintM();
+            multiBuilding.Print();
             Console.WriteLine();
             Console.Write("Нажмите на любого клавиша . . .");
             Console.ReadKey();
@@ -48,9 +48,9 @@ namespace Program_13
         {
             Z = z;
         }
-        public void PrintM()
+        public new void Print()
         {
-            Print();
+            base.Print();
             Console.WriteLine("Этажность здания: {0}", Z);
         }
 
